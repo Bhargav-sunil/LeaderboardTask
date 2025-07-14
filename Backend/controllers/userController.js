@@ -28,7 +28,7 @@ const addUsers = async (req,res) => {
 
 const getLeaderboard = async (req, res) => {
     try {
-        const users = await User.find().sort({totalPoints: -1});
+        const users = await User.find().sort({totalPoints: -1}).limit(10);
         const rankedUsers = users.map((user, index) => ({
             ...user.toObject(),
             rank: index + 1
