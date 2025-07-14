@@ -1,0 +1,19 @@
+.claim-button {
+  padding: 10px 18px;
+  font-size: 1rem;
+  border: none;
+  background-color: #28a745;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.claim-button:hover:not(:disabled) {
+  background-color: #218838;
+}
+
+.claim-button:disabled {
+  background-color: #b0b0b0;
+  cursor: not-allowed;
+}
